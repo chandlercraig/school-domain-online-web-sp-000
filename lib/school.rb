@@ -19,7 +19,7 @@ class School
    end
 
    def sort
-     
+     @roster.each { |key, value| @roster[key] = value.sort! { |x, y| x[0] <=> y[0] } }
    end
 
 end
